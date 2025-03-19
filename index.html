@@ -1,48 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Website</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Awesome Website</title>
     <style>
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Styles */
         header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            font-size: 18px;
+            padding: 8px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        header nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background: url('https://via.placeholder.com/1600x600') center center no-repeat;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            padding: 50px 20px;
             text-align: center;
         }
-        main {
+
+        .main-content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
             padding: 20px;
         }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+
+        footer a {
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .main-content h2 {
+                font-size: 2em;
+            }
+
+            .main-content p {
+                font-size: 1em;
+            }
+
+            header nav {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
     </style>
 </head>
+
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to My Static Website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
-    <main>
-        <h2>About This Page</h2>
-        <p>This is a simple static webpage created using HTML and styled with basic CSS.</p>
-        <p>Feel free to customize this template and make it your own!</p>
-    </main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to My Awesome Website</h1>
+        <p>Your one-stop solution for everything amazing!</p>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+        <h2>About Us</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et pharetra felis. Mauris nec
+            ultrices eros. Nulla facilisi. Curabitur in odio sit amet ligula fermentum ultricies. Phasellus et nisi
+            tincidunt, aliquam arcu nec, sodales elit. Suspendisse potenti.
+        </p>
+        <p>
+            Fusce vel justo ut tortor tempor sodales. Integer at augue in urna scelerisque tempus ut a nisi. Donec
+            tempus, arcu et posuere venenatis, lorem libero auctor purus, non suscipit sapien risus at nisi.
+        </p>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 My Static Website</p>
+        <p>&copy; 2025 My Awesome Website | <a href="#">Privacy Policy</a></p>
     </footer>
 </body>
+
 </html>
+
 
